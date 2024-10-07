@@ -10,8 +10,7 @@ On the day of the interview, we will ask you to do the following:
     • Explain some of the technical choices you made (choice of Frontend/Backend technologies, how you persisted list of countries and why, etc.)
     • Discuss some potential areas of improvement (design, performance, etc.)
 There is no limitation on the use of Google, Stack Overflow, etc. to research and develop this application.
-
-##What I used
+## What I used
 To make the application have those features, I used PHP (backend server-side) and AJAX (data fetching) to interact with the database and ensure the frontend is updated dynamically without reloading the page. I also used MySQL to store the country data, allowing me to efficiently manage and retrieve information for the search functionality. Additionally, I implemented some parts in JavaScript (client-side for interaction), especially to handle the case-insensitive search and dynamically update the list of countries displayed.
 
 For the user interface and structure, I used HTML/CSS (frontend) to create a clean, user-friendly layout that makes the search experience seamless and visually appealing.
@@ -63,7 +62,7 @@ INSERT INTO countries (country_name) VALUES
 ('Zambia');
 ```
 
-##Files structure
+## Files structure
 Main page is index.php, what the user will see and search their country. 
 Search.php is the file I made to fetch the data from the database. 
 Connection.php, has the setup for the files to connect to the database. 
@@ -74,5 +73,5 @@ Search.js, handles the search operations:
 -   handle the AJAX requests(fetcing the countries)
 style.css, the file used for styling the website.
 
-##how does it work?
+## how does it work?
 The list of countries is retrieved from the MySQL database via a PHP query. JavaScript listens to user input and dynamically filters the country list. AJAX is used to asynchronously fetch data from search.php without reloading the page. Input is converted to lowercase to match country names regardless of case.
