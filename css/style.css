@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #C0C78C;
+}
+
+/* style the title */
+.title h1 {
+    background: #A6B37D;
+    text-align: center;
+    font-size: 2em;
+    color: #000000;
+    margin-top: 20px;
+    padding: 3vh;
+    /* border: 2px solid #B99470; */
+}
+
+.title {
+    width: 100%;
+}
+
+/* style the search bar  */
+.autocomplete-wrapper {
+    width: 90%;
+    background: #A6B37D;
+    align-content: center;
+    /* border: 2px solid #B99470; */
+    margin: 20px auto;
+}
+
+input {
+    border: unset;
+    background: #A6B37D;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+    
+    
+}
+
+/* style the list of countries */
+
+#countries-list {
+    margin: 20px auto;
+    width: 70%;
+    border-collapse: collapse;
+    list-style-type: none;
+    padding: 2em;
+    /* border: 2px solid #B99470; */
+    background: #A6B37D;
+    cursor: pointer;
+}
+
+#countries-list ul {
+    align-content: center;
+   
+
+}
+
+#countries-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+    width: 100%;
+}
+
+
+.country-name {
+    width: 100%;
+    text-align: center;
+    background-color: #A6B37D;
+}
+
+#autocomplete-input {
+    padding: 8px;
+    width: 100%;
+    font-size: 16px;
+}
